@@ -1,0 +1,80 @@
+// Bootstrap overrides for this template
+.bg-primary {
+    background: white;
+}
+
+.text-primary {
+    color: black;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-call-to-action {
+    color: white;
+    border: 1px solid;
+    border-color: $theme-green;
+    background: $theme-green;
+    &:hover {
+        color: $theme-green;
+        border: 1px solid;
+        border-color: $theme-green;
+        background-color: transparent;
+    }
+    &:focus,
+    &:active,
+    &.active {
+        color: white;
+        background: $theme-green;
+    }
+}
+
+.btn-outline {
+    color: black;
+    border: 1px solid;
+    border-color: black;
+    background-color: transparent;
+    background: transparent;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: white;
+        background-color: black;
+    }
+}
+
+.btn {
+    @include alt-font;
+}
+
+.btn-xl {
+    font-size: 11px;
+    padding: 15px 45px;
+}
+
+.btn-regular {
+    font-size: 11px;
+    padding: 15px 30px;
+    margin: 0px 10px;
+}
+
+/*
+Aligns the phone demo to be centered in its container.
+*/
+.device {
+    text-align: center;
+}
+
+.container h2 {
+    color: black;
+}
+
+/*
+Overriding body text color which used to be black.
+*/
+p.section-heading {
+    color: black;
+}
